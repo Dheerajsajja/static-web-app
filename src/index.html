@@ -40,7 +40,7 @@
     <script>
         async function fetchStudentData() {
             try {
-                const response = await fetch('https://your-api-endpoint'); // Replace with your API URL
+                const response = await fetch('https://retrivestudent.azurewebsites.net/api/studentdata?'); // Replace with your API URL
                 const data = await response.json();
 
                 const tableBody = document.querySelector('#studentTable tbody');
